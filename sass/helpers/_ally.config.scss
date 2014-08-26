@@ -1,0 +1,78 @@
+// Accessibility Helpers
+// =====================
+
+// -------------------------------------
+//   helpers
+// -------------------------------------
+
+%ir {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}
+
+// hide from everything ----------------
+
+%hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+%visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+%invisible {
+  visibility: hidden;
+}
+
+// Is Hidden
+// ---------
+
+@mixin _is-hidden--position {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+@mixin _is-hidden--clip {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin is-hidden(
+  $method: clip
+) {
+  @if $method == position {
+    @include _is-hidden--position;
+  } @else {
+    @include _is-hidden--clip;
+  }
+}
+
+
+// Placeholders
+// ------------
+
+%is-hidden {
+  @include is-hidden;
+}

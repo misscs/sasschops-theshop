@@ -1,0 +1,100 @@
+// Typography
+// ==========
+
+// Base Size
+// ---------
+$ms-base: 1em;
+$ms-ratio: $golden;
+
+
+
+// Fonts
+// -----
+// http://css-tricks.com/snippets/css/using-font-face/
+
+@include font-face('BullenReg', font-files("bullen-regular/bullen-regular.woff", "bullen-regular/bullen-regular.ttf"));
+@include font-face('BullenBoldItalic', font-files("bullen-bolditalic/bullen-bolditalic.woff", "bullen-regular/bullen-bolditalic.ttf"), 'bold',
+  'italic');
+
+
+// Headings
+// --------
+
+%h1 {
+  font-family: "BullenBoldItalic";
+  font-size: ms(2);
+}
+
+%h2 {
+
+}
+
+%h3,
+%h4,
+%h5 {
+  font-weight: bold;
+}
+
+
+// Links
+// -----
+
+$link: '&:link, &:visited';
+$focus: '&:hover, &:focus, &:active';
+
+%link {
+  color: color(action);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%link-focus {
+  color: color(focus);
+}
+
+
+// Lists
+// -----
+
+%ordered-list-styles {
+  list-style: decimal;
+}
+
+%undered-list-styles {
+  list-style: disc;
+}
+
+%nested-list-styles {
+  margin-left: 0.5em;
+}
+
+%list-styles {
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+
+%inline-list {
+}
+
+%lists {
+  ol,
+  ul {
+    @extend %list-styles;
+
+    ol,
+    ul {
+      @extend %nested-list-styles;
+    }
+  }
+
+  ol { @extend %ordered-list-styles; }
+
+  ul { @extend %undered-list-styles; }
+}
+
+// Blocks
+// ------
+
+%paragraph-styles {
+  max-width: 40em;
+}
