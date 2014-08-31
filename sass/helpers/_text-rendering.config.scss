@@ -1,0 +1,12 @@
+// # Optimize Legibility
+// ===================
+
+// http://css-tricks.com/almanac/properties/t/text-rendering/
+//  * { text-rendering: optimizeLegibility; }
+//  html.touch * { text-rendering: optimizeSpeed; }
+
+
+%optimize-legibitility {
+  text-rendering: optimizeLegibility;
+}
+
