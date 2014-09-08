@@ -1,25 +1,42 @@
-@import 'base/settings.config';
-
-
-/* Manifestations
-/* ==============
-/* #{$copyright-year}
-================= */
-
 // Dependencies
 // ------------
+// Third-party Sass dependencies
+
 @import "base/requirements.config";
-@import "plugins/normalize";
 
-// Settings
-// --------
 
-@import 'base/colors.config';
+// Theme Settings
+// --------------
 @import 'base/typography.config';
-@import 'base/functions.config';
+
+
+// Helpers
+// -------
+// Helpers are reusable chunks of code that solve common web problems
+//
+// Table of Contents
+// ..................
+// * A11y - Accessibility tools
+// * Clearfix - Clearfix utilities
+// * Googlefont - Mixin for easier importing GoogleFonts
+// * Text Rendering helpers
+
 @import 'helpers/*';
-@import 'base/base';
-@import 'base/icons';
+
+// Document Root
+// --------------
+// 1. Sets up the page document root. Includes styling for base elements
+// 2. Normalize.CSS - unedited
+
+// Normalize browser settings
+// @import 'normalize'; // [2]
+@import 'base/root'; // [1]
+
+// Components
+// ----------
+
+@import 'components/notifications';
+
 
 
 

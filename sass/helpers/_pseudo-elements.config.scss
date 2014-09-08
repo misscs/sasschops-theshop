@@ -1,0 +1,29 @@
+// Psuedo-Elements
+// ===============
+// Picasso'd from [Accoutrement][https://github.com/ericam/accoutrement]
+// A wonderful little library of helpers by [Eric Suzzane]()
+// @see [_pseudo-elements.scss](https://github.com/ericam/accoutrement/blob/master/stylesheets/accoutrement/_pseudo-elements.scss)
+
+
+// Before
+// ------
+@mixin before(
+  $content
+) {
+  &:before {
+    content: $content;
+    @content;
+  }
+}
+
+
+// After
+// -----
+@mixin after(
+  $content
+) {
+  &:after {
+    content: $content;
+    @content;
+  }
+}

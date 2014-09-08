@@ -1,4 +1,4 @@
-[SassChops Homepage](http://itsmisscs.me)
+[HTML5 Boilerplate homepage](http://html5boilerplate.com)
 
 # SassChops Documentation
 
@@ -19,3 +19,19 @@
   crossdomain requests.
 * [Everything else](misc.md).
 
+## Development
+
+* [Extending and customizing HTML5 Boilerplate](extend.md) — Going further with
+  the boilerplate.
+
+## Related projects
+
+HTML5 Boilerplate has several related projects to help improve the performance
+of your site/app in various production environments.
+
+* [Server configs](https://github.com/h5bp/server-configs) — Configs for
+  different servers.
+* [Node build script](https://github.com/h5bp/node-build-script) — A
+  feature-rich [grunt](https://github.com/gruntjs/grunt) plugin.
+* [Ant build script](https://github.com/h5bp/ant-build-script) — The original
+  HTML5 Boilerplate build script.

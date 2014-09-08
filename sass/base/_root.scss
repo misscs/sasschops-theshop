@@ -1,7 +1,6 @@
 // Base Output
 // ===========
 
-
 // High-, page-level styling.
 // --------------------------
 // 1. Set the default `font-size` and `line-height` for the entire project,
@@ -15,10 +14,6 @@
 // 5. Fonts on OSX will look more consistent with other systems that do not
 //    render text using sub-pixel anti-aliasing.
 
-
-@import 'base/box-sizing';
-
-
 html,
 body {
   height: 100%;
@@ -27,8 +22,8 @@ body {
 html {
   font-size: ($base-font-size / 16px) * 1em; // [1]
   line-height: $base-line-height / $base-font-size; // [1]
-  background-color: #fff;
-  color: #222;
+  background-color: $base-background-color;
+  color: $base-text-color;
   overflow-y: scroll; // [2]
   min-height: 100%; // [3]
   -webkit-text-size-adjust: 100%; // [4]
@@ -38,15 +33,14 @@ html {
 }
 
 body {
-  font-family: 'BullenReg', Georgia, serif;
-  margin: 1em;
+  font-family: $base-font-family;
 }
 
 
 // // Headers
 // // -------
 
-h1 { @extend %h1; }
+// h1 { @extend %h1; }
 
 // h2 { @extend %h2; }
 
@@ -71,14 +65,12 @@ h1 { @extend %h1; }
 // strong { font-weight: bold; }
 
 
-// // Paragraph
-// // ---------
+// /* Paragraph */
 
 // p { @extend %paragraph-styles; }
 
 
-// // Image
-// // ---------
+/* Image, Media, Video Objects */
 
 img, video {
   max-width: 100%;

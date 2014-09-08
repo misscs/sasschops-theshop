@@ -1,0 +1,18 @@
+// Color Helpers
+// =============
+// Additional color functions to manipuate colors
+
+
+// Tint
+// ----
+// Add percentage of white to a color
+@function tint($color, $percent) {
+  @return mix(white, $color, $percent);
+}
+
+// Shade
+// ------
+// Add percentage of black to a color
+@function shade($color, $percent) {
+  @return mix(black, $color, $percent);
+}

@@ -1,0 +1,45 @@
+// Accessibility Helpers
+// =====================
+// Picasso'd from [Accoutrement][https://github.com/ericam/accoutrement]
+// A wonderful little library of helpers by [Eric Suzzane]()
+// @see [_a11y.scss](https://github.com/ericam/accoutrement/blob/master/stylesheets/accoutrement/_a11y.scss)
+
+@mixin _is-hidden--position {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+@mixin _is-hidden--clip {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin is-hidden(
+  $method: clip
+) {
+  @if $method == position {
+    @include _is-hidden--position;
+  } @else {
+    @include _is-hidden--clip;
+  }
+}
+
+
+// Placeholders
+// ------------
+
+%is-visually-hidden {
+  @include is-hidden;
+}
+
+%is-hidden {
+  @include is-hidden(position);
+}
+
+%is-invisible {
+  visibility: hidden;
+}

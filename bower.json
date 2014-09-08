@@ -1,11 +1,11 @@
 {
-  "name": "ChopShop Chair",
-  "version": "0.0",
+  "name": "SassChops",
+  "version": "0.1.0",
   "homepage": "https://github.com/misscs",
   "authors": [
     "Claudina Sarahe cs@misscs.me"
   ],
-  "description": "ChopShop workshop files",
+  "description": "SassChops workshop files",
   "keywords": [
     "sass",
     "compass"
@@ -19,6 +19,8 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "~3.0.1"
+    "normalize.css": "~3.0.1",
+    "project-colophon": "misscs/sasschops-settings.config"
+
   }
 }
