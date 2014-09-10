@@ -7,7 +7,7 @@
 * [Usage](usage.md) — Overview of the project contents.
 * [FAQ](faq.md) — Frequently asked questions, along with their answers.
 
-## The core of SassChops
+## The core of HTML5 Boilerplate
 
 * [HTML5 Boilerlate](html.md) — A guide to the default HTML.
 * [CSS](css.md) — A guide to the default CSS.
