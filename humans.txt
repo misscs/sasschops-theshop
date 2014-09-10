@@ -3,15 +3,30 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Claudina Sarahe -- Crafter -- @itsmisscs
 
 # THANKS
 
-    <name>
+    All the very smart, inspirational people in the field whose work I've often
+    Picasso'd and learned a great deal from:
+    
+    * Jackie Balzer
+    * Chris Eppstein
+    * Hugo Giraudel
+    * Harry Roberts
+    * Eric Suzanne
+    * Mason Wendell
+
+    Additional thanks to these great online resources:
+
+    * thesassway.com
+    * http://css-tricks.com/
+    * http://tympanus.net/codrops/
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
-    Sass, Compass
-    Grunt, Gulp
+    Sass, Compass, 
+    Grunt, Gulp, Bower,
+    Ruby, Gems 
