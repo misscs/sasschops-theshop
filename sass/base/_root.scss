@@ -33,45 +33,11 @@ html {
 }
 
 body {
-  font-family: $base-font-family;
+
 }
 
 
-// // Headers
-// // -------
-
-// h1 { @extend %h1; }
-
-// h2 { @extend %h2; }
-
-// h3 { @extend %h3; }
-
-
-// // Links
-// // -----
-
-// a {
-//   #{$link} { @extend %link; }
-
-//   #{$focus} { @extend %link-focus; }
-// }
-
-
-// // Inline Elements
-// // ---------------
-
-// em { font-style: italic; }
-
-// strong { font-weight: bold; }
-
-
-// /* Paragraph */
-
-// p { @extend %paragraph-styles; }
-
-
-/* Image, Media, Video Objects */
-
+// Image, Media, Video Objects
 img, video {
   max-width: 100%;
   height: auto;
