@@ -1,54 +1,15 @@
 // Typography
 // ==========
-
-// @@@ TODO review micah's article and chris's typography idea
+// @see http://css-tricks.com/opt-in-typography/
 
 
 // Font Variables
 // --------------
 
 $base-font-size: 16px;
-$base-line-height: 32px;
+$base-line-height: 4px;
 $base-background-color: #fff;
 $base-text-color: #222;
-$base-font-family: 'BullenReg Georgia serif';
-
-
-
-// Headings
-// --------
-
-%h1 {
-  font-family: "BullenBoldItalic";
-  font-size: ms(2);
-}
-
-%h2 {
-
-}
-
-%h3,
-%h4,
-%h5 {
-  font-weight: bold;
-}
-
-
-// Links
-// -----
-
-$link: '&:link, &:visited';
-$focus: '&:hover, &:focus, &:active';
-
-%link {
-  // color: color($link-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-%link-focus {
-  // color: color($link-focus);
-}
 
 
 // Lists
@@ -69,9 +30,6 @@ $focus: '&:hover, &:focus, &:active';
 %list-styles {
   margin-bottom: 0.5em;
   margin-left: 0.5em;
-}
-
-%inline-list {
 }
 
 %lists {
