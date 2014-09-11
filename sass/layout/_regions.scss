@@ -1,0 +1,25 @@
+// Layout
+// ======
+// Use ``r-`` namespace to denote a main site region
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.r-main {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.r-banner,
+.r-footer {
+  flex: 0 0 auto;
+  padding: 0.5em 1em;
+}
