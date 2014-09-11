@@ -3,35 +3,43 @@
 
 .notification {
   border-radius: 0.2em;
-  color: hsla(312, 7%, 10%, 1);
-
-  background-color: hsla(312, 7%, 55%, 1);
-  border: 1px solid hsla(312, 7%, 45%, 1);
-
   font-family: sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
-
   line-height: 1.25;
   text-transform: uppercase;
   padding: 0.2em 0.5em;
-  text-shadow: hsla(312, 7%, 70%, 1) 1px 1px 0;
+
+  & + .notification {
+    margin-top: 1em;
+  }
+
 }
 
-// Notification used to provide helpful information to the user
+// Basic notification used to provide helpful information to the user
 //  ex. site announcments
 .notification--info {
+  color: hsla(307, 94%, 90%, 1);
+  background-color: hsla(307, 94%, 25%, 1);
+  border: 1px solid hsla(307, 94%, 20%, 1);
+  text-shadow: hsla(307, 7%, 25%, .9) 1px 1px 0;
+}
 
-
+// Notification used to provide confirmation to the user
+//  ex. form submissions
+.notification--success {
+  color: hsla(157, 60%, 20%, 1);
+  background-color: hsla(157, 60%, 65%, 1);
+  border: 1px solid hsla(157, 60%, 45%, 1);
+  text-shadow: hsla(157, 70%, 60%, .3) 1px 1px 0;
 }
 
 // Notification usd to warn the user
 //  i.e Use for irreversible actions
-
 .notification--alert {
-  color: hsla(312, 100%, 40%, 1) ;
-  background-color: hsla(312, 100%, 70%, 1);
-  border-color: hsla(312, 100%, 60%, 1);
-  text-shadow: hsla(312, 100%, 25%, 1) 1px 1px 0;
+  color: hsla(337, 100%, 90%, 1) ;
+  background-color: hsla(337, 100%, 30%, 1);
+  border-color: hsla(337, 100%, 60%, 1);
+  text-shadow: hsla(337, 100%, 25%, .9) 1px 1px 0;
 
 }

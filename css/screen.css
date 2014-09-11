@@ -2,65 +2,144 @@
   * =================================
   * Colophon for SassChops
   * Get your Sass a cut above the rest
-  * Created by Claudina Sarahe
-  * Liscensed Apache
+  * Hand-crafted by Claudina Sarahe
+  * Liscense Apache
   * Copyright 2014
   * ==================================
  */
-/*------------------------------------*\
-    #BOX-SIZING
-\*------------------------------------*/
-/* line 17, ../sass/base/_root.scss */
-html,
-body {
-  height: 100%;
+/* line 9, ../sass/patterns/_box-sizing.config.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 22, ../sass/base/_root.scss */
+/* line 17, ../sass/patterns/_box-sizing.config.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 20, ../sass/base/_root.scss */
 html {
   font-size: 1em;
-  line-height: 2;
-  background-color: #fff;
-  color: #222;
-  overflow-y: scroll;
-  min-height: 100%;
+  line-height: 0.375;
+  background-color: #f6e9f3;
+  color: #2d0120;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 35, ../sass/base/_root.scss */
-body {
-  font-family: "BullenReg Georgia serif";
-}
-
-/* Image, Media, Video Objects */
-/* line 75, ../sass/base/_root.scss */
+/* line 34, ../sass/base/_root.scss */
 img, video {
   max-width: 100%;
   height: auto;
 }
 
+/* line 5, ../sass/layout/_regions.scss */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 10, ../sass/layout/_regions.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* line 16, ../sass/layout/_regions.scss */
+.r-main {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+/* line 21, ../sass/layout/_regions.scss */
+.r-banner,
+.r-footer {
+  flex: 0 0 auto;
+  padding: 0.5em 1em;
+}
+
+/* line 4, ../sass/components/_banner.scss */
+.r-banner {
+  border-bottom: 1px solid #450232;
+  background: #450232;
+}
+/* line 8, ../sass/components/_banner.scss */
+.r-banner-title {
+  color: #fee1f6;
+}
+/* line 12, ../sass/components/_banner.scss */
+.r-banner-subtitle {
+  color: #fdb0e7;
+}
+
+/* line 4, ../sass/components/_contentinfo.scss */
+.r-footer {
+  border-top: 1px solid #e0ccda;
+  background: #e7dfe5;
+}
+
+/* line 13, ../sass/patterns/_pseudo-elements.config.scss */
+.license:before {
+  content: "Licensed under: ";
+}
+
+/* line 4, ../sass/components/_simulations.scss */
+[class*="sim--"] {
+  margin: 1em 1em 2em;
+  padding: 0 1em 1em;
+  background: #fff;
+  border: 1px solid #e0ccda;
+}
+
+/* line 11, ../sass/components/_simulations.scss */
+.sim-title {
+  line-height: 1.5;
+  color: #380245;
+  border-bottom: 1px solid #e0ccda;
+}
+
 /* line 4, ../sass/components/_notifications.scss */
 .notification {
   border-radius: 0.2em;
-  color: #1b181b;
-  background-color: #948491;
-  border: 1px solid #7b6b78;
   font-family: sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
   line-height: 1.25;
   text-transform: uppercase;
   padding: 0.2em 0.5em;
-  text-shadow: #b8adb6 1px 1px 0;
+}
+/* line 13, ../sass/components/_notifications.scss */
+.notification + .notification {
+  margin-top: 1em;
 }
 
-/* line 31, ../sass/components/_notifications.scss */
+/* line 21, ../sass/components/_notifications.scss */
+.notification--info {
+  color: #fdcef8;
+  background-color: #7c046e;
+  border: 1px solid #630358;
+  text-shadow: rgba(68, 59, 67, 0.9) 1px 1px 0;
+}
+
+/* line 30, ../sass/components/_notifications.scss */
+.notification--success {
+  color: #14523a;
+  background-color: #70dbb2;
+  border: 1px solid #2eb883;
+  text-shadow: rgba(82, 224, 170, 0.3) 1px 1px 0;
+}
+
+/* line 39, ../sass/components/_notifications.scss */
 .notification--alert {
-  color: #cc00a3;
-  background-color: #ff66e0;
-  border-color: #ff33d6;
-  text-shadow: #800066 1px 1px 0;
+  color: #ffcce0;
+  background-color: #99003b;
+  border-color: #ff3381;
+  text-shadow: rgba(128, 0, 49, 0.9) 1px 1px 0;
 }

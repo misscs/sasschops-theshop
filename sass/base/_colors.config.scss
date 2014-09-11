@@ -1,28 +1,12 @@
 // Colors
 // ======
-// These are where site colors go.
-// Refactor color variables to a map.
-// Write a function to easily retrieve colors
 
-// @@@ TODO: Set this up for each of them to build a simple theme using color
-// functions
-// @@@@ TODO: Revist how intuit handles their namespacing
-
-// Setting up your SCHEME
-// ----------------------
-// 1. Pick a base color
-// 2.
-
-$base-color: hsla(307, 94%, 14%, 1); // Purple-ish
+$base-color: hsla(317, 94%, 14%, 1); // [1] Purple-ish
 
 $palette-primary: $base-color;
-$palette-secondary: #3914AF;
-$palette-tertiary: #3914AF;
-$palette-quadrary: #3914AF;
-$palette-complement: complement($palette-primary); // Green
+$palette-secondary: adjust-color($palette-primary, $hue: 197);
+$palette-tertiary: adjust-color($palette-primary, $hue: 5);
+$palette-quadrary: adjust-color($palette-primary, $hue: 5);
 
-$theme-primary: #3914AF;
-$theme-secondary: #3914AF;
-$theme-tertiary: #3914AF;
-$theme-quadrary: #3914AF;
+$border-light: adjust-color($base-color, $saturation: -70%, $lightness: 70%)
 

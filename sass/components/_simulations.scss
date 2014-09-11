@@ -1,0 +1,15 @@
+// Simulation Component
+// ====================
+
+[class*="sim--"] {
+  margin: 1em 1em 2em;
+  padding: 0 1em 1em;
+  background: #fff;
+  border: 1px solid $border-light;
+}
+
+.sim-title {
+  line-height: 1.5;
+  color: hsla(288, 94%, 14%, 1);
+  border-bottom: 1px solid $border-light;
+}

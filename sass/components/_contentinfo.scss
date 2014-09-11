@@ -1,0 +1,12 @@
+// Footer/Content Info
+// -------------------
+
+.r-footer {
+  border-top: 1px solid $border-light;
+  background: adjust-color($base-color, $saturation: -80%, $lightness: 75%);
+}
+
+
+.license {
+  @include before('Licensed under: ')
+}

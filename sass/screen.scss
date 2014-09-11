@@ -7,34 +7,41 @@
 
 // Theme Settings
 // --------------
+@import 'base/colors.config';
 @import 'base/typography.config';
 
 
-// Helpers
-// -------
-// Helpers are reusable chunks of code that solve common web problems
+// Patterns
+// --------
+// Patterns contains reusable chunks of code that solve common web problems
 //
-// Table of Contents
-// ..................
 // * A11y - Accessibility tools
+// * Box-sizing (border-box)
 // * Clearfix - Clearfix utilities
 // * Googlefont - Mixin for easier importing GoogleFonts
-// * Text Rendering helpers
+// * Psuedo Elements
+// * Text Rendering
+// * Tint and Shade (colors)
 
-@import 'helpers/*';
+@import 'patterns/*';
 
 // Document Root
 // --------------
 // 1. Sets up the page document root. Includes styling for base elements
 // 2. Normalize.CSS - unedited
 
-// Normalize browser settings
-// @import 'normalize'; // [2]
 @import 'base/root'; // [1]
+
+// Layout
+// ------
+
+@import 'layout/regions';
 
 // Components
 // ----------
-
+@import 'components/banner';
+@import 'components/contentinfo';
+@import 'components/simulations';
 @import 'components/notifications';
 
 

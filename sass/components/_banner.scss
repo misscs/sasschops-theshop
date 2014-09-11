@@ -1,0 +1,15 @@
+// Banner
+// ======
+
+.r-banner {
+  border-bottom: 1px solid $base-color;
+  background: $base-color;
+
+  &-title {
+    color: lighten($base-color, 80%);
+  }
+
+  &-subtitle {
+    color: lighten($base-color, 70%);
+  }
+}

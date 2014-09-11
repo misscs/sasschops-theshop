@@ -7,9 +7,9 @@
 // --------------
 
 $base-font-size: 16px;
-$base-line-height: 4px;
-$base-background-color: #fff;
-$base-text-color: #222;
+$base-line-height: 6px;
+$base-background-color: adjust-color($base-color, $saturation: -50%, $lightness: 80%);
+$base-text-color: darken($base-color, 5);
 
 
 // Lists

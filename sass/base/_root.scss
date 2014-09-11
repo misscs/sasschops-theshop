@@ -1,6 +1,8 @@
 // Base Output
 // ===========
 
+@include border-box;
+
 // High-, page-level styling.
 // --------------------------
 // 1. Set the default `font-size` and `line-height` for the entire project,
@@ -14,28 +16,19 @@
 // 5. Fonts on OSX will look more consistent with other systems that do not
 //    render text using sub-pixel anti-aliasing.
 
-html,
-body {
-  height: 100%;
-}
 
 html {
   font-size: ($base-font-size / 16px) * 1em; // [1]
   line-height: $base-line-height / $base-font-size; // [1]
   background-color: $base-background-color;
   color: $base-text-color;
-  overflow-y: scroll; // [2]
-  min-height: 100%; // [3]
+  // overflow-y: scroll; // [2]
+  // min-height: 100%; // [3]
   -webkit-text-size-adjust: 100%; // [4]
       -ms-text-size-adjust: 100%; // [4]
   -moz-osx-font-smoothing: grayscale; // [5]
    -webkit-font-smoothing: antialiased; // [5]
 }
-
-body {
-
-}
-
 
 // Image, Media, Video Objects
 img, video {
