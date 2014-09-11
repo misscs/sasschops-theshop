@@ -3,25 +3,20 @@
   * Colophon for SassChops
   * Get your Sass a cut above the rest
   * Hand-crafted by Claudina Sarahe
-  * Liscense Apache
-  * Copyright 2014
+  * License Apache
+  * 2014 | 1.0.1
   * ==================================
  */
-/* line 9, ../sass/patterns/_box-sizing.config.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 17, ../sass/patterns/_box-sizing.config.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
-/* line 20, ../sass/base/_root.scss */
 html {
   font-size: 1em;
   line-height: 0.375;
@@ -30,82 +25,56 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
-/* line 34, ../sass/base/_root.scss */
 img, video {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-/* line 5, ../sass/layout/_regions.scss */
 html {
   height: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-/* line 10, ../sass/layout/_regions.scss */
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 16, ../sass/layout/_regions.scss */
 .r-main {
   flex: 1;
-  overflow-y: scroll;
-}
+  overflow-y: scroll; }
 
-/* line 21, ../sass/layout/_regions.scss */
 .r-banner,
 .r-footer {
   flex: 0 0 auto;
-  padding: 0.5em 1em;
-}
+  padding: 0.5em 1em; }
 
-/* line 4, ../sass/components/_banner.scss */
 .r-banner {
   border-bottom: 1px solid #450232;
-  background: #450232;
-}
-/* line 8, ../sass/components/_banner.scss */
-.r-banner-title {
-  color: #fee1f6;
-}
-/* line 12, ../sass/components/_banner.scss */
-.r-banner-subtitle {
-  color: #fdb0e7;
-}
+  background: #450232; }
+  .r-banner-title {
+    color: #fee1f6; }
+  .r-banner-subtitle {
+    color: #fdb0e7; }
 
-/* line 4, ../sass/components/_contentinfo.scss */
 .r-footer {
   border-top: 1px solid #e0ccda;
-  background: #e7dfe5;
-}
+  background: #e7dfe5; }
 
-/* line 13, ../sass/patterns/_pseudo-elements.config.scss */
 .license:before {
-  content: "Licensed under: ";
-}
+  content: "Licensed under: "; }
 
-/* line 4, ../sass/components/_simulations.scss */
 [class*="sim--"] {
   margin: 1em 1em 2em;
   padding: 0 1em 1em;
   background: #fff;
-  border: 1px solid #e0ccda;
-}
+  border: 1px solid #e0ccda; }
 
-/* line 11, ../sass/components/_simulations.scss */
 .sim-title {
   line-height: 1.5;
   color: #380245;
-  border-bottom: 1px solid #e0ccda;
-}
+  border-bottom: 1px solid #e0ccda; }
 
-/* line 4, ../sass/components/_notifications.scss */
 .notification {
   border-radius: 0.2em;
   font-family: sans-serif;
@@ -113,33 +82,26 @@ body {
   font-size: 0.9rem;
   line-height: 1.25;
   text-transform: uppercase;
-  padding: 0.2em 0.5em;
-}
-/* line 13, ../sass/components/_notifications.scss */
-.notification + .notification {
-  margin-top: 1em;
-}
+  padding: 0.2em 0.5em; }
+  .notification + .notification {
+    margin-top: 1em; }
 
-/* line 21, ../sass/components/_notifications.scss */
 .notification--info {
   color: #fdcef8;
   background-color: #7c046e;
   border: 1px solid #630358;
-  text-shadow: rgba(68, 59, 67, 0.9) 1px 1px 0;
-}
+  text-shadow: rgba(68, 59, 67, 0.9) 1px 1px 0; }
 
-/* line 30, ../sass/components/_notifications.scss */
 .notification--success {
   color: #14523a;
   background-color: #70dbb2;
   border: 1px solid #2eb883;
-  text-shadow: rgba(82, 224, 170, 0.3) 1px 1px 0;
-}
+  text-shadow: rgba(82, 224, 170, 0.3) 1px 1px 0; }
 
-/* line 39, ../sass/components/_notifications.scss */
 .notification--alert {
   color: #ffcce0;
   background-color: #99003b;
   border-color: #ff3381;
-  text-shadow: rgba(128, 0, 49, 0.9) 1px 1px 0;
-}
+  text-shadow: rgba(128, 0, 49, 0.9) 1px 1px 0; }
+
+/*# sourceMappingURL=screen.css.map */

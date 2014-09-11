@@ -19,8 +19,6 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "~3.0.1",
-    "project-colophon": "misscs/sasschops-settings.config"
-
+    "normalize.css": "~3.0.1"
   }
 }

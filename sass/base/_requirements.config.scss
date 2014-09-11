@@ -2,7 +2,8 @@
 // ===========================
 // Import Third party extensions from Compass or Bower
 // This file should load first in the manifest
+//  i.e.
+//    @import 'compass';
+//    @import 'project-colophon/colophon';
 
-// @import "compass";
-
-@import 'project-colophon/colophon';
+@import 'plugins/colophon';

@@ -17,7 +17,7 @@ If you are not using [rbenv](https://github.com/sstephenson/rbenv), a build tool
 
 1. Clone or download the Shop files.
 1. ``cd`` into the directory and run ``bundle install``
-1. Run ``compass watch``
+1. Run ``compass watch`` or ``sass -r sass-globbing --watch sass:css``
 
 If you do not have bundler, you just need to ensure you have Sass, Compass, and the Sass globbing gem on your machine. 
 
