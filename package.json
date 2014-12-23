@@ -26,7 +26,9 @@
     "gulp-autoprefixer": "^2.0.0",
     "gulp-changed": "^1.1.0",
     "gulp-compass": "2.0.3",
+    "gulp-plumber": "^0.6.6",
     "gulp-scsslint": "^0.0.5",
-    "gulp-util": "3.0.1"
+    "gulp-util": "3.0.1",
+    "gulp-watch": "^3.0.0"
   }
 }
