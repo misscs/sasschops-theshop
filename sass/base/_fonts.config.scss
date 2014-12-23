@@ -1,0 +1,27 @@
+// Font Face Mixin
+// ===============
+// http://css-tricks.com/snippets/css/using-font-face/
+
+@mixin font-face($font-family, $font-dir, $font-name, $fw: false, $fs: false, $font-base-dir: 'fonts/') {
+  $font-path: $font-base-dir + $font-dir;
+
+  @font-face {
+      font-family: $font-family;
+      src: url('#{$font-path}#{$font-name}.eot');
+      src: url('#{$font-path}#{$font-name}.eot?#iefix') format('embedded-opentype'),
+           url('#{$font-path}#{$font-name}.woff') format('woff'),
+           url('#{$font-path}#{$font-name}.ttf') format('truetype'),
+           url('#{$font-path}#{$font-name}.svg##{$font-family}') format('svg');
+
+      @if $fw {
+        font-weight: #{$fw};
+      }
+
+      @if $fs {
+        font-style: #{$fs};
+      }
+
+  }
+}
+
+@include font-face('Veramono', 'veramono/', 'veramono-italic', italic)

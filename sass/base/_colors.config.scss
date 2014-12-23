@@ -8,5 +8,5 @@ $palette-secondary: adjust-color($palette-primary, $hue: 197);
 $palette-tertiary: adjust-color($palette-primary, $hue: 5);
 $palette-quadrary: adjust-color($palette-primary, $hue: 5);
 
-$border-light: adjust-color($base-color, $saturation: -70%, $lightness: 70%)
+$border-light: adjust-color($base-color, $saturation: -70%, $lightness: 70%);
 

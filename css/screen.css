@@ -8,16 +8,6 @@
   * ==================================
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
-
-html {
   font-size: 1em;
   line-height: 0.375;
   background-color: #f6e9f3;
@@ -44,8 +34,7 @@ body {
   flex: 1;
   overflow-y: scroll; }
 
-.r-banner,
-.r-footer {
+.r-banner, .r-footer {
   flex: 0 0 auto;
   padding: 0.5em 1em; }
 
@@ -60,9 +49,6 @@ body {
 .r-footer {
   border-top: 1px solid #e0ccda;
   background: #e7dfe5; }
-
-.license:before {
-  content: "Licensed under: "; }
 
 [class*="sim--"] {
   margin: 1em 1em 2em;
@@ -103,5 +89,3 @@ body {
   background-color: #99003b;
   border-color: #ff3381;
   text-shadow: rgba(128, 0, 49, 0.9) 1px 1px 0; }
-
-/*# sourceMappingURL=screen.css.map */
