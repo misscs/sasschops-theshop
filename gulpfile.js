@@ -4,6 +4,7 @@ var changed = require('gulp-changed');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
 var cache = require('gulp-cached');
+var connect = require('gulp-connect');
 
 var scsslint = require('gulp-scsslint');
 var compass = require('gulp-compass');
@@ -36,12 +37,18 @@ gulp.task('lint', function () {
     .pipe(scsslint.reporter())
 });
 
-// Watch Files For Changes
+// task to start the webserver
+// looks for index.html in root directory (where gulpfile.js)
+gulp.task('webserver', function() {
+  connect.server();
+});
+
+// task to watch files for changes
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch(paths.sass, ['sass']);
 });
 
-// Default Task
-gulp.task('default', ['sass', 'watch']);
+// default task
+gulp.task('default', ['sass', 'watch', 'webserver']);
 
