@@ -18,7 +18,7 @@ var paths = {
   scss_lint: 'scss_lint.yml'
 };
 
-// // compile sass files
+// task to compile sass files
 gulp.task('sass', ['lint'], function () {
   gulp.src(paths.sass)
     .pipe(sass())
@@ -27,9 +27,18 @@ gulp.task('sass', ['lint'], function () {
     .pipe(gulp.dest(paths.css));
 });
 
+// task to lint sass files
 gulp.task('lint', function () {
   return gulp.src(paths.sass)
     .pipe(scsslint({ 'config': paths.scss_lint, 'bundleExec': true }))
     .pipe(scsslint.reporter())
 });
+
+// Watch Files For Changes
+gulp.task('watch', function() {
+    gulp.watch(paths.sass, ['sass']);
+});
+
+// Default Task
+gulp.task('default', ['sass', 'watch']);
 
