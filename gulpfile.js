@@ -3,6 +3,7 @@ var gutil = require('gulp-util');
 var changed = require('gulp-changed');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
+var cache = require('gulp-cached');
 
 var scsslint = require('gulp-scsslint');
 var compass = require('gulp-compass');
@@ -13,11 +14,12 @@ var autoprefixer = require('gulp-autoprefixer');
 var paths = {
   css: 'css',
   sass: ['sass/**/*.scss', 'sass/*.scss'],
-  images: 'client/img/**/*'
+  images: 'client/img/**/*',
+  scss_lint: 'scss_lint.yml'
 };
 
 // // compile sass files
-gulp.task('sass', function () {
+gulp.task('sass', ['lint'], function () {
   gulp.src(paths.sass)
     .pipe(sass())
     .pipe(gulp.dest(paths.css))
@@ -25,8 +27,9 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(paths.css));
 });
 
-// gulp.task('default', function() {
-//   // compile scss
-//   gulp.src(paths.sass)
-//     .pipe(watch(paths.sass, ['sass']));
-// });
+gulp.task('lint', function () {
+  return gulp.src(paths.sass)
+    .pipe(scsslint({ 'config': paths.scss_lint, 'bundleExec': true }))
+    .pipe(scsslint.reporter())
+});
+
