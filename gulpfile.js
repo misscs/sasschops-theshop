@@ -9,6 +9,7 @@ var scsslint = require('gulp-scsslint');
 var compass = require('gulp-compass');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var livereload = require('gulp-livereload');
 
 // we define some constants here so they can be reused
 var paths = {
@@ -24,7 +25,8 @@ gulp.task('sass', ['lint'], function () {
     .pipe(sass())
     .pipe(gulp.dest(paths.css))
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest(paths.css));
+    .pipe(gulp.dest(paths.css))
+    .pipe(livereload());
 });
 
 // task to lint sass files
@@ -36,6 +38,7 @@ gulp.task('lint', function () {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
+    livereload.listen();
     gulp.watch(paths.sass, ['sass']);
 });
 
